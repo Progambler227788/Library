@@ -4,7 +4,6 @@ import android.content.Intent
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.fragmentslearn.databinding.ActivityMainBinding
 
@@ -15,7 +14,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.i(my,"onCreate")
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         binding.button.setOnClickListener {
              replaceFrag(BlankFragment())
         }
