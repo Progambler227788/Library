@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
         binding.talha.setOnClickListener {
             startActivity(Intent(this,Layouts::class.java))
         }
+        binding.loadCards.setOnClickListener {
+            startActivity(Intent(this,CardViewer::class.java))
+        }
 
 
     }
