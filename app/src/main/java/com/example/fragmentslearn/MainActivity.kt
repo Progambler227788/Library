@@ -23,10 +23,12 @@ class MainActivity : AppCompatActivity() {
             replaceFrag(BlankFragment2())
         }
         binding.talha.setOnClickListener {
-            startActivity(Intent(this,Layouts::class.java))
+
+
+            startActivity(Intent(this,Layouts::class.java).putExtra("name","Talha"))
         }
         binding.loadCards.setOnClickListener {
-            startActivity(Intent(this,CardViewer::class.java))
+            startActivity(Intent(this,RecyclerView::class.java))
         }
 
 

@@ -33,7 +33,7 @@ class BlankFragment : Fragment() {
         Log.i(my,"onCreateView")
         val view = inflater.inflate(R.layout.fragment_blank,container,false)
         val myListView = view.findViewById<ListView>(R.id.listView)
-        val myData = arrayOf("Talha","Haroon","Farman","Arslan","Noman","Ismail","Shahbaz","Hadia","Janam")
+        val myData = arrayOf("Talha","Haroon","Farman","Arslan","Noman","Ismail","Jonny Bai","Hadia","Janam")
         Adapter = ArrayAdapter(activity as Context,android.R.layout.simple_selectable_list_item,myData)
         myListView.adapter = Adapter
         return view

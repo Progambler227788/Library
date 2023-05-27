@@ -84,4 +84,10 @@
         android:contentDescription="@string/rate_things"
         android:layout_marginRight="15sp" />
 
+    <Button
+        android:id="@+id/storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Storage" />
+
 </LinearLayout>
